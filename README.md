@@ -5,11 +5,21 @@
 Este é um projeto baseado na Netflix, uma das maiores streaming já conhecidas. 
 
 ## Desafio
-O projeto tem o intuito de utilizar conceitos e tecnologias como: React.js, Bootstrap, JavaScript, HTML, CSS e FIGMA. Mas também, explorar a reutilização de componentes para deixar o código flexível e reaproveitável.
+O projeto tem como proposta utilizar conceitos e tecnologias como: React.js, Bootstrap, JavaScript, HTML, CSS e FIGMA. E também explorar os componentes para um código escalável, flexível e reutilizável.
 
 ## Modelo conceitual
+[building...]
 
-building...
+## FIGMA Template/Page-view
+
+### page-login
+<img src="https://github.com/Caelest1s/NetflixWeb/blob/main/assets/figma/Login.png"/>
+
+### page-home
+<img src="https://github.com/Caelest1s/NetflixWeb/blob/main/assets/figma/Home.png"/>
+
+### page-filme
+<img src="https://github.com/Caelest1s/NetflixWeb/blob/main/assets/figma/Filme.png"/>
 
 ## Tecnologias Utilizadas
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" /> 
