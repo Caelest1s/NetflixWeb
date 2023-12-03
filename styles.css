@@ -31,18 +31,26 @@ header img {
     background-color: #fff;
 }
 
-.btn-custom-white:hover {
-    opacity: 0.8;
+.btn-custom-translucent {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
 }
 
-.btn-custom-translucent {
-    background-color: rgba(0, 255, 255, 0.2);
-    color: #fff;
+.btn-custom-round {
+    padding: 5px 9px !important;
+}
+
+.btn-custom-white:hover {
+    opacity: 0.8;
 }
 
 .btn-custom-translucent:hover {
     color: #fff;
     opacity: 0.8;
+}
+
+.opacity-50 {
+    opacity: 0.5;
 }
 
 button.btn_login_entrar {
@@ -82,6 +90,18 @@ button.btn_login_entrar {
     top: 0;
 }
 
+#hero::after {
+    content: '';
+    width: 100%;
+    height: 350px;
+    display: block;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, black 100%);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: calc(700px - 350px);
+}
+
 #hero_infos {
     padding: 0;
     margin-top: 170px;
@@ -99,7 +119,87 @@ button.btn_login_entrar {
 }
 
 #hero_infos h1 img{
-    margin-bottom: 35px;
+    width: 35px;
     margin-top: -10px;
     margin-right: 15px;
+}
+
+#main-content {
+    margin-top: 700px;
+}
+
+.filme_lista {
+    overflow-x: scroll;
+    list-style: none;
+    white-space: nowrap;
+    padding: 20px 0;
+    display: block;
+    border: 1px solid transparent;
+}
+
+.filme_lista::-webkit-scrollbar {
+    display: none;
+}
+
+.filme {
+    display: inline-block;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+    overflow-y: hidden;
+}
+
+.filme:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    z-index: 999;
+    transition: 0.5s;
+}
+
+.filme:hover .filme_info {
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.filme:first-child {
+    margin-left: 70px;
+}
+
+.filme_info {
+    background-color: #171717;
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    transform: scale(0);
+}
+
+.filme_info .col-12 {
+    margin-top: 5px;
+}
+
+.filme_info .col-12:first-child {
+    margin-bottom: 20px;
+    padding-left: 0;
+}
+
+.filme_info p {
+    color: #7e7b7b;
+    font-size: 12px;
+}
+
+.filme_info p text {
+    color: #fff;
+}
+
+section {
+    margin-bottom: -100px;
+    position: relative;
+}
+
+section:hover {
+    z-index: 9;
 }
